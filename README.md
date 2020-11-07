@@ -24,3 +24,23 @@ PATCH:
   So if a request is sent and it needs to change the value of 'name' from { 'name' : 'Ichiro' } to { 'name' : 'Jim }, 
   it will update the value on the first successful request, and keep the value on all subsequent requests until a new value is specified. 
   Similar to PUT, successful PATCHes return a 200 or 204 responses, failed PATCHes return a 405 or 404 status.
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Constraints
+
+Stateless:
+  Every request must be contain all information required, because no session information is retained on the server.
+  
+Layers:
+  A great benefit to this is load balancing. This will improve scalability and prevent any one server from being overloaded.
+  
+Client Server Architecture:
+  Separation of concerns between the UI and the server allow the use of the server to be used indepently and across domains.
+  
+Cache:
+  Response must be cacheable or not. Depending on the service, it could cause clients to return non-updated data, but it could reduce unnecessary communcation between the server   and client.
+  
+Uniform Interface:
+  Resources are identified through the request, and the server will send the data in some form (like HTML, or JSON). An HTTP service resource can be found with its URI.
