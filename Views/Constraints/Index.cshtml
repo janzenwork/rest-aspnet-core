@@ -1,0 +1,54 @@
+﻿
+@{ 
+    ViewData["Title"] = "REST Constraints";
+}
+
+<div class="text-center">
+    <p><h4>Constraints which define REST</h4></p>
+</div>
+
+<div class="card">
+    <div class="card-title">
+        <h4>Stateless</h4>
+        <p class="dropdown-divider"></p>
+    </div>
+    <div class="card-body">
+        <p>Every request must be contain all information required, because no session information is retained on the server</p>
+    </div>
+</div>
+<div class="card">
+    <div class="card-title">
+        <h4>Layers</h4>
+        <p class="dropdown-divider"></p>
+    </div>
+    <div class="card-body">
+        <p>A great benefit to this is load balancing. This will improve scalability and prevent any one server from being overloaded.</p>
+    </div>
+</div>
+<div class="card">
+    <div class="card-title">
+        <h4>Client Server Separation</h4>
+        <p class="dropdown-divider"></p>
+    </div>
+    <div class="card-body">
+        <p>Separation of concerns between the UI and the server allow the use of the server to be used indepently and across domains.</p>
+    </div>
+</div>
+<div class="card">
+    <div class="card-title">
+        <h4>Cache</h4>
+        <p class="dropdown-divider"></>
+    </div>
+    <div class="card-body">
+        <p>Response must be cacheable or not. Depending on the service, it could cause clients to return non-updated data, but it could reduce unnecessary communcation between the server and client</p>
+    </div>
+</div>
+<div class="card">
+    <div class="card-title">
+        <h4>Uniform Interface</h4>
+        <p class="dropdown-divider"></p>
+    </div>
+    <div class="card-body">
+        <p>Resources are identified through the request, and the server will send the data in some form (like HTML, or JSON). An HTTP service resource can be found with its URI.</p>
+    </div>
+</div>
