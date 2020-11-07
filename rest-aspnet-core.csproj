@@ -5,4 +5,12 @@
     <RootNamespace>rest_aspnet_core</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Controllers\crudController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\uploads\" />
+  </ItemGroup>
+
 </Project>

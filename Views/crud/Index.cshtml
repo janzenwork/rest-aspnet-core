@@ -1,1 +1,15 @@
 ﻿
+
+@{
+    ViewData["Title"] = "File upload";
+}
+
+<form method="post" enctype="multipart/form-data" asp-controller="crud" asp-action="Index">
+    <div class="form-group">
+        <div class="col-md-10">
+            <p>Upload files</p>
+            <input type="file" name="files" multiple />
+            <button class="btn btn-danger">Upload</button>
+        </div>
+    </div>
+</form>
